@@ -66,7 +66,7 @@ namespace BrnoMVC1.Web.Controllers
 
         }
 
-
+        // poznamka
 
         // GET: Movies
         public ActionResult Index()
