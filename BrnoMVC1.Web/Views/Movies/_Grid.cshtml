@@ -1,0 +1,38 @@
+﻿@model List < MovieViewModel>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table>
+
+    <tr>
+        <th>
+            Titul
+        </th>
+        <th>
+            Zanr
+        </th>
+        <th>
+            Detail
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.Title;</td>
+        <td>@item.Genres;</td>
+        <td>@Html.ActionLink("Detail", "Details", "Movies", new { Id = item.Id}, null)</td>
+    </tr>
+    }
+
+</table>
+
+
+
+
+
+

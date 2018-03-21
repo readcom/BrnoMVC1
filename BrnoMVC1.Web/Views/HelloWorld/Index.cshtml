@@ -1,0 +1,19 @@
+﻿@model string
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Model</h2>
+
+
+<a href="/Administration/User" class="btn btn-primary">USER</a>
+
+
+
+@Html.ActionLink("User", "Index", new { Area = "Administration", Controller = "User", Test = "Ahoj", Test2 = 5 }, new { @class = "btn btn-danger" })
+
+
+
+@Html.ActionLink("Prehled filmu podle roku", "Released", "Movies", new { year = "2015", month = "01" }, new { @class = "btn btn-default" })

@@ -1,0 +1,28 @@
+﻿@model MovieViewModel
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Detail filmu</h2>
+
+<p>
+    @*Nazev: @Model.Title*@
+    @Html.DisplayNameFor(n => n.Title)
+    @Html.DisplayFor(d => d.Title)
+</p>
+
+<p>
+    @*Zanr: @Model.Genres*@
+    @Html.DisplayNameFor(n => n.Genres)
+    @Html.DisplayFor(d => d.Genres)
+</p>
+
+
+
+
+
+
+
+

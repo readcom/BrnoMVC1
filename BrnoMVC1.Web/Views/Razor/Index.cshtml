@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (true)
+{
+
+    <text>Hello, world!</text><br />
+    @:Hello, world! 2 <br />
+    @:Hello, world! 3 <br />
+
+
+
+
+    <div>
+        Hello, world! 4
+    </div>
+}
+
+
+<div class="@if (true) {<text>btn btn-info</text> } ">BTN</div>
+
+@{
+    var a = 5;
+    var b = a + 7;
+}
+
+<br />
+Vysledek = @b
+
+@*
+    delegat
+*@
+
+@{
+    Func<dynamic, object> bold = @<strong>@item</strong>;
+}
+
+<br />
+
+Hi, @bold("Marek") <br />
+
+
+
+<div id="email">mara@aaaa.bbbb</div>

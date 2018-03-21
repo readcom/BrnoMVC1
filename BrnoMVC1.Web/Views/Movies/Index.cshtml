@@ -1,0 +1,38 @@
+﻿@model List<MovieViewModel>
+
+
+@{
+    ViewBag.Title = "Index";
+    TempData["nadpis3"] = "Seznam filmu 3";
+}
+
+<h2>@ViewBag.MoviesNadpis</h2>
+
+<h3> @ViewData["nadpis"] </h3>
+<h3> @TempData["nadpis2"] </h3>
+
+<br />
+<hr />
+
+@*@Html.Partial("_Grid", Model)*@
+@Html.Action("_Grid")
+
+<br />
+<hr />
+
+<p>
+
+    @Html.ActionLink("Přidat nový film", "Create", "Movies")
+
+</p>
+
+<p>
+
+    @Html.ActionLink("Přidat víc filmů", "CreateMovies", "Movies")
+
+</p>
+
+
+
+
+
